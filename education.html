@@ -4,12 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education - Abhishek Madaan</title>
-    <link rel="stylesheet" href="style.css"> <!-- Your main CSS -->
+    <link rel="stylesheet" href="style.css"> 
     <style>
         body {
-            background-color: #121212; /* Matches your dark theme */
-            color: #ffffff; /* White text */
+            background-color: #121212; 
+            color: #ffffff;
             font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        header {
+            background-color: #000000;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #00bfff;
         }
         .container {
             max-width: 900px;
@@ -25,7 +48,7 @@
             background-color: #1e1e1e;
             padding: 20px;
             margin-bottom: 20px;
-            border-left: 4px solid #00bfff; /* Highlight color */
+            border-left: 4px solid #00bfff; 
             border-radius: 5px;
         }
         .education-item h2 {
@@ -39,6 +62,20 @@
     </style>
 </head>
 <body>
+
+    <!-- Header Navigation -->
+<header class="bg-black text-white p-6 shadow-lg sticky top-0 z-50">
+  <nav class="flex justify-center space-x-10 text-lg font-semibold">
+    <a href="about.html" class="hover:text-blue-400 transition">About</a>
+    <a href="skills.html" class="hover:text-blue-400 transition">Skills</a>
+    <a href="projects.html" class="hover:text-blue-400 transition">Projects</a>
+    <a href="experience.html" class="hover:text-blue-400 transition">Experience</a>
+    <a href="certificates.html" class="hover:text-blue-400 transition">Certificates</a>
+    <a href="education.html" class="hover:text-blue-400 transition">Education</a>
+    <a href="contact.html" class="hover:text-blue-400 transition">Contact</a>
+  </nav>
+</header>
+    <!-- Education Section -->
     <div class="container">
         <h1>Education</h1>
 
@@ -46,10 +83,9 @@
             <h2>NIIT University</h2>
             <p>B.Tech in Cybersecurity (2022 - 2026)</p>
             <p>CGPA: 7.61</p>
-            <p>Relevant Courses: Threat Detection, Digital Forensics, Incident Response, Networking, IAM</p>
+            <p><b>Relevant Courses:</b> Threat Intelligence, Cyber Forensics, Ethical Hacking, Network Security, IAM</p>
         </div>
-
-
     </div>
+
 </body>
 </html>
